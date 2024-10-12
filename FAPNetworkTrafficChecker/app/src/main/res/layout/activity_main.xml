@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txConnectionStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="인터넷 연결 상태: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="2dp"/>
+
+        <TextView
+            android:id="@+id/txReceivedPerSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수신 속도: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="2dp"/>
+
+        <TextView
+            android:id="@+id/txTransmittedPerSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="송신 속도: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="2dp"/>
+
+        <TextView
+            android:id="@+id/txReceived"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="총 수신 바이트: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="2dp"/>
+
+        <TextView
+            android:id="@+id/txTransmitted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="총 송신 바이트: "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginLeft="2dp" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"
+            android:background="@color/black" />
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="186dp"
+            android:background="#F0F0F0">
+
+            <TextView
+                android:id="@+id/txNetworkLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btnAutoScroll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="자동 스크롤 OFF" />
+
+            <Button
+                android:id="@+id/btnToggleRotation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="화면 회전 Lock" />
+
+            <Button
+                android:id="@+id/btnInformation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:text="프로그램 정보" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <RadioButton
+                    android:id="@+id/btnEnglish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English"
+                    android:buttonTint="@color/btn_color"/>
+
+                <RadioButton
+                    android:id="@+id/btnKorean"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="한국어  "
+                    android:buttonTint="@color/btn_color"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

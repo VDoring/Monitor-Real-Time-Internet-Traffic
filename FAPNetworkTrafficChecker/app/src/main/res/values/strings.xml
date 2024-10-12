@@ -1,0 +1,19 @@
+<resources>
+    <string name="activity_title_english">Network Status</string>
+    <string name="activity_title_korean">네트워크 상태</string>
+    <string name="information_title_english">Program and Developer Information</string>
+    <string name="information_title_korean">프로그램 및 개발자 정보</string>
+    <string name="information_text_english">
+        Check your digital pulse anytime, anywhere.\n\n\n
+        No complicated features. Only the information you need.\n\n\n
+        Keep the optimal connection with this simple but powerful app.\n\n\n
+        First Android work of student developer VDoring.\nstore debut.
+    </string>
+    <string name="information_text_korean">
+        언제 어디서나 당신의 디지털 맥박을 체크하세요.\n\n\n
+        복잡한 기능은 없습니다. 오직 당신에게 꼭 필요한 정보만 제공합니다.\n\n\n
+        심플하지만 강력한 이 앱으로 언제나 최적의 연결 상태를 유지하세요.\n\n\n
+        학생 개발자 VDoring의 첫 안드로이드 작품.\n 스토어 대뷔작.
+    </string>
+    <string name="app_name">실시간 인터넷 속도 측정기 - 5G, LTE, WiFi</string>
+</resources>
